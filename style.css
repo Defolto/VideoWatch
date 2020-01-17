@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu:500&display=swap');
+/* modal */
+.modalLabel{
+    display: block;
+    margin-bottom: 25px;
+}
+.modalInput{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 60%;
+    padding: 5px;
+    outline: none;
+    transition: .7s;
+}
+.modalInput:hover{
+    width: 65%;
+}
+.modalInput:focus{
+    width: 65%;
+    border-bottom: 2px solid gray;
+}
+
+#camers{
+    background: url('img/fon4.jpg');
+    background-size: cover;
+    background-position-y: top;
+}
+.whyText{
+    font-size: 22px;
+    padding-top: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    transition: .6s;
+}
+.navHide{
+    background-color: rgba(255, 255, 255, 0.856);
+    transform: translateY(-5px);
+}
+#header{
+    background: url('img/fon1.jpg');
+    height: 100vh;
+    background-size: cover;
+}
+@media(max-width: 950px){
+    #header{
+        height: 100%;
+    }
+    #mainTitle h1{
+        padding-top: 25px !important;
+        margin-top: 0px !important;
+    }
+}
+@media(max-width: 768px){
+    #header{
+        background-position: center;
+    }
+}
+@media(max-width: 576px){
+    #mainTitle h1{
+        text-shadow: -1px 0 1px white, 0 -1px 1px white, 0 1px 1px white, 1px 0 1px white, 0 0 8px white, 0 0 8px white, 0 0 8px white, 2px 2px 3px black;
+    }
+}
+@media(max-width: 450px){
+    #header{
+        background: url('img/fon1Mini.jpg');
+        background-size: cover;
+    }
+    .navbar-brand{
+        color: white !important;
+    }
+}
+.whiteFon{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.titleSection{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px; 
+}
+.navbar-brand{
+    font-size: 35px !important;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbarDark{
+    color: black !important;
+}
+.navbarFoto{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+@media(max-width: 382px){
+    .navbar-brand{
+        font-size: 25px !important;
+    }
+    .navbarFoto{
+        width: 60px;
+        height: 60px;
+    }
+}
+.nav-link{
+    margin-top: 10px;
+    font-size: 22px;
+    margin-left: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: black !important;
+}
+.number{
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+.myBtn{
+    border: 1px solid black;
+    padding: 10px 20px;
+    display: inline;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    color: black;
+    font-weight: 500;
+    overflow: hidden !important;
+    display: inline-block;
+    background-color: rgb(0, 174, 255, 1);
+    position: relative;
+}
+.line{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    animation: line 2.3s linear infinite;
+    position: absolute;
+}
+.lineIn1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.2) 0%, rgb(0, 174, 255, 0.6) 41%);
+}
+.lineIn2{
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(180deg, rgba(255,255,255, 0.2) 0%, rgb(0, 174, 255, 0.6) 41%);
+    position: absolute;
+}
+@keyframes line{
+    0%{
+        transform: translateX(0px) rotateZ(-45deg);
+    }
+    29%{
+        transform: translateX(150px) rotateZ(-45deg);
+    }
+    50%{
+        transform: translateX(-10000000000px) rotateZ(-45deg);
+    }
+    71%{
+        transform: translateX(-150px) rotateZ(-45deg);
+    }
+    100%{
+        transform: translateX(0px) rotateZ(-45deg);
+    }
+}
+.navBtn{
+    font-size: 16px;
+    transition: .6s;
+    border-radius: 20px;
+}
+.navBtn:hover{
+    transform: translateY(-7px);
+}
+.mainBlock{
+    font-size: 25px;
+    padding: 10px 30px;
+    transition: .6s;
+}
+#mainTitle{
+    font-family: 'Ubuntu', sans-serif;
+}
+#mainTitle > h1{
+    font-size: 43px !important;
+    line-height: 1.35;
+}
+@media(max-width: 400px){
+    #mainTitle > h1{
+        font-size: 38px !important;
+        line-height: 1.35;
+    }
+}
+.mainBlock:hover{
+    border-radius: 20px;
+    box-shadow: 0px 11px 23px 0px rgba(0,0,0,0.75);
+    transform: translateY(-5px);
+}
+.titlePlus{
+    font-weight: 600;
+    font-size: 27px;
+}
+.blockPlus{
+    font-size: 16px;
+    margin: 50px 0px;
+}
+.blockSpecially{
+    margin: 20px;
+    box-shadow: 0px 0px 12px 2px rgba(0,0,0,0.75);
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width: 1200px){
+    .blockSpecially{
+        width: 70%;
+    }
+}
+@media(max-width: 600px){
+    .blockSpecially{
+        width: 100%;
+        margin: 20px 0px;
+    }
+}
+.placeInclude{
+    background: url('img/fon2.jpg');
+    background-size: cover;
+    padding: 20px 0px;
+}
+.SpeciallyTitle{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+.SpeciallyText{
+    padding: 25px;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+.footerTitle{
+    font-family: 'Ubuntu', sans-serif;
+}
+.SpecBottom{
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    padding: 8px 0px;
+    box-shadow: inset 0px 0px 2px 0px rgba(109, 109, 109, 0.75);
+    transition: .6s;
+    cursor: pointer;
+    color: black;
+    font-size: 23px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
+.SpecBottom:hover{
+    background-color: rgb(219, 219, 219);
+    text-align: center;
+    padding: 8px 0px;
+    color: black;
+    text-decoration: none;
+    box-shadow: inset 0px 0px 5px 0px rgba(109, 109, 109, 0.75);
+}
+.blockForm{
+    background-color: #00296B;
+}
+.formPole{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 70%;
+    transition: .6s;
+    color: black;
+    outline: none;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+.formPole::-moz-placeholder { color: rgba(0, 0, 0, 0.534); }
+.formPole::-webkit-input-placeholder { color: rgba(0, 0, 0, 0.575); }
+.formPole:hover,
+.formPole:active{
+    width: 90%;
+}
+.formPole:focus{
+    border-bottom: 2px solid black;
+    width: 90%;
+}
+.formBtn{
+    border: none;
+    padding: 8px 20px;
+    font-size: 21px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(53, 53, 53, 0.836);
+    cursor: pointer;
+    transition: .6s;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.formBtn:hover{
+    box-shadow: 0px 4px 10px 0px rgba(39, 39, 39, 0.85);
+    transform: translateY(-4px);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.AboutPoint{
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    margin: 0px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 10px;
+    position: relative;
+}
+.activePoint{
+    background-color: rgb(19, 18, 15) !important;
+}
+.AboutPoint > span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+.AboutPoint + p{
+    padding: 10px;
+    box-shadow: inset 0px 0px 5px 0px rgba(109, 109, 109, 0.75);
+    margin: 0px;
+}
+#job{
+    background: url('img/fon3.jpg');
+    background-size: cover;
+    background-position-y: top;
+}
+.blockJob{
+    box-shadow: 0px 0px 5px 0px rgba(34, 34, 34, 0.836);
+    padding: 0px !important;
+    background-color: whitesmoke;
+    margin-bottom: 35px;
+}
+.jobFoto{
+    transition: .6s;
+    overflow: hidden;
+}
+.blockJob > .jobFoto > img{
+    transition: .6s;
+}
+.blockJob:hover > .jobFoto > img{
+    transform: scale(1.1);
+}
+.jobText{
+    padding: 20px;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+.appTitle{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.stepText, .stepText + p{
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+#fonForm{
+    background: url('img/fonForm.jpg');
+    background-size: cover;
+    height: 100%;
+}
+.formPole1{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    font-size: 18px;
+    color: whitesmoke;
+    padding: 5px;
+    padding-bottom: 0px;
+}
+.formText{
+    font-weight: 600;
+    font-size: 20px;
+}
+.footer p{
+    margin: 0px;
+}
+.footerBrand{
+    font-size: 22px;
+    font-weight: 600;
+}
+.footerContact{
+    font-size: 25px;
+    font-weight: 700;
+}
+.footerContact p{
+    padding-bottom: 5px;
+}
+.mapOut{
+    position: relative;
+}
+.mapIn{
+    position: absolute;
+    padding: 15px;
+    background-color: rgb(236, 236, 236);
+    left: 70%;
+    height: 100%;
+    width: 23%;
+}
+.colMini{
+    position: relative;
+}
+.colBlock{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+.colRight{
+    width: 10%;
+}
+
+.formBlock{
+    margin: 30px 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.45);
+    border-radius: 25px;
+    transition: .9s;
+    animation: shadow 1s ease-in-out infinite;
+    animation-direction: alternate; 
+}
+.formBlock:hover{
+    animation: none;
+    box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.75), inset 0px 0px 14px -7px rgba(0,0,0,0.75);
+}
+
+@keyframes shadow{
+    0%{
+        box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.75), inset 0px 0px 14px -7px rgba(0,0,0,0.75);
+    }
+    100%{
+        box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75), inset 0px 0px 8px 2px rgba(0,0,0,0.75);
+    }
+}
+
+/* Анимации */
+body{
+    overflow-x: hidden;
+}
+.container-fluid{
+    overflow: hidden;
+}
+.blockRight,.blockLeft{
+    opacity: 0;
+}
+.fadeInLeft {
+    animation: fadeInLeft .8s ease-in-out forwards;
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+} 
+.fadeInRight {
+    animation: fadeInRight .8s ease-in-out forwards;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+  
+.blockSpecially{
+    opacity: 0;
+}
+.fadeInUp {
+    animation: fadeInUp .8s ease-in-out forwards;
+}
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.blockPartner{
+    opacity: 0;
+    padding: 15px;
+}
+.zoomIn {
+    animation: zoomIn 1s ease-in-out forwards;   
+}
+
+.colMini{
+    opacity: 0;
+}
+@keyframes flipInY {
+    0% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    100% {
+        transform: perspective(400px);
+        opacity: 1;
+    }
+}
+.flipInY {
+    backface-visibility: visible !important;
+    animation: flipInY 1s ease-in-out forwards;
+}
+.footerForm{
+    opacity: 0;
+}
+@media(max-width: 760px){
+    .blockRight,.blockLeft{
+        opacity: 1;
+    }
+    .blockSpecially{
+        opacity: 1;
+    }
+    .blockPartner{
+        opacity: 1;
+    }
+    .colMini{
+        opacity: 1;
+    }
+    .footerForm{
+        opacity: 1;
+    }
+}

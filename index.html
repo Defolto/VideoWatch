@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="yandex-verification" content="1b8cf26444b8a616" />
+    <title>Document</title>
+</head>
+<body>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Обратный звонок</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <form id="formModal" action="mail.php" method="POST">
+                            <label class="modalLabel" for="">
+                                <input type="text" class="modalInput" placeholder="Имя" name="user_name">
+                            </label>
+                            <label class="modalLabel" for="">
+                                <input type="text" class="modalInput" placeholder="Номер" name='user_phone'>
+                            </label>
+                            <label class="modalLabel" for="">
+                                <input type="email" class="modalInput" placeholder="Email (по желанию)" name="user_email">
+                            </label>
+                        </form>
+                        <small>*Все данные не сохраняются и не используются в будущем</small>
+                </div>
+                <div class="modal-footer pl-3">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary" form="formModal">Отправить</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Оставить заявку</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <form id="formModal1" action="mailFull.php" method="POST">
+                            <label class="modalLabel" for="">
+                                <input type="text" class="modalInput" placeholder="Имя" name="user_name">
+                            </label>
+                            <label class="modalLabel" for="">
+                                <input type="text" class="modalInput" placeholder="Номер" name="user_phone">
+                            </label>
+                            <label class="modalLabel" for="">
+                                <input type="email" class="modalInput" placeholder="Email (по желанию)" name="user_email">
+                            </label>
+                            <textarea type="text" class="modalInput mb-4" rows="2" placeholder="Текст сообщения" name="user_text"></textarea>
+                        </form>
+                        <small>*Все данные не сохраняются и не используются в будущем</small>
+                </div>
+                <div class="modal-footer pl-5">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="submit" class="btn btn-primary" form="formModal1">Отправить</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top px-3 py-1">
+        <a class="navbar-brand" href="#"><img class="navbarFoto" src="img/logo3.png" alt="Логотип">SmartHome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-2" id="navbarText">
+            <ul class="navbar-nav mr-auto mb-2" id="menu">
+                <a class="nav-link" href="#about">Услуги</a>
+                <a class="nav-link" href="#job">Примеры</a>
+                <a class="nav-link" href="#price">Как заказать</a>
+            </ul>
+            <div class="navbar-text text-center">
+                <p class="number">99-45-45</p>
+                <div class="myBtn navBtn" data-toggle="modal" data-target="#exampleModal">Обратный звонок <div class="line"><div class="lineIn1"></div><div class="lineIn2"></div></div></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="header">
+        <div class="row">
+            <div class="col-md-5 col-sm-5 col-0">
+
+            </div>
+            <div class="col-md-6 col-sm-7 col-12 text-center pt-5 mt-5">
+                <div id="mainTitle"><h1 class="pt-5 mt-5 pb-4">Устанавливаем видео<wbr>наблюдение <br> быстро, качественно, недорого <br> В Ярославле и по области</h1>
+                <p class="myBtn mainBlock" data-toggle="modal" data-target="#exampleModal1">Оставить заявку</p></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid py-5" id="about">
+        <div class="row justify-content-center pb-5 titleSection text-center">
+            Почему вам стоит выбрать нашу компанию
+        </div>
+        <div class="row">
+            <div class="col-md-5 p-0">
+                <img src="img/AboutUs.jpg" width="100%" alt="">
+                <span id="target1"></span>
+            </div>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-6 text-right p-4 blockRight">
+                        <img src="img/why1.jpg" alt="" class="" width="70px" height="70px">
+                        <p class="whyText">Профессиональная установка систем видеонаблюдения, гарантия безупречного качества работ</p>
+                    </div>
+                    <div class="col-md-6 text-left p-4 blockLeft">
+                        <img src="img/why2.jpg" alt="" class="" width="70px" height="70px">
+                        <p class="whyText">Наш инженер бесплатно выезжает на ваш объект делает осмотр и составляет смету</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-right p-4 blockRight">
+                        <img src="img/why3.jpg" alt="" class="" width="70px" height="70px">
+                        <p class="whyText">Мы предлагаем качественное оборудование по самым низким ценам</p>
+                    </div>
+                    <div class="col-md-6 text-left p-4 blockLeft">
+                        <img src="img/why4.jpg" alt="" class="" width="70px" height="70px">
+                        <p class="whyText">Гарантируем техническую поддержку и обслуживание систем видеонаблюдения</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid placeInclude">
+        <div class="row justify-content-center py-5 titleSection text-center">
+            Сфера ипользования видео<wbr>наблюдения!
+        </div>
+        <div class="row justify-content-around">
+                <div class="col-xl-3 blockSpecially p-0">
+                    <span id="target2"></span>
+                    <img src="img/spec.jpg" alt="" width="100%">
+                    <div class="SpeciallyTitle">
+                        Для дома
+                    </div>
+                    <div class="SpeciallyText">
+                        Система видеонаблюдения отлично спарвляется с охраной вашего дома от нежеланных гостей или уведомлении при разных происшействиях.
+                    </div>
+                    <a class="SpecBottom mt-auto" href="#fonForm">Подробнее -></a>
+                </div>
+                <div class="col-xl-3 blockSpecially p-0">
+                    <img src="img/spec1.jpg" alt="" width="100%">
+                    <div class="SpeciallyTitle">
+                        Для бизнеса
+                    </div>
+                    <div class="SpeciallyText">
+                        Видеонаблюдение - это отличный способ защитить вашу компанию или предприятие от вторжения, а так же идеальный вариант для контроля рабочего процесса с любой точки мира.
+                    </div>
+                    <a class="SpecBottom mt-auto" href="#fonForm">Подробнее -></a>
+                </div>
+                <div class="col-xl-3 blockSpecially p-0">
+                    <img src="img/spec2.jpg" alt="" width="100%">
+                    <div class="SpeciallyTitle">
+                        Другие возможности
+                    </div>
+                    <div class="SpeciallyText">
+                        Сфер применения камер видеонаблюдения очень много, поэтому мы готовы взять от Вас абсолютно любой заказ
+                    </div>
+                    <a class="SpecBottom mt-auto" href="#fonForm">Подробнее -></a>
+                </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10 formBlock py-5">
+                <div class="row justify-content-center titleSection text-dark pb-4 text-center">
+                    Оставьте заявку прямо сейчас!
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form method="POST" action="mail.php">
+                            <div class="form-row justify-content-center">
+                                <div class="col-md-2 text-center">
+                                <input type="text" class="formPole" placeholder="Имя" name="user_name">
+                                </div>
+                                <div class="col-md-2 text-center">
+                                <input type="email" class="formPole" placeholder="Email" name="user_email">
+                                </div>
+                                <div class="col-md-2 text-center">
+                                <input type="number" class="formPole" placeholder="Номер телефона" name="user_phone">
+                                </div>
+                                <div class="col-md-3 text-center">
+                                <button class="formBtn">Оставить заявку</button>
+                                </div>
+                            </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light py-5">
+        <div class="row justify-content-center titleSection py-4 text-center">
+            Нам доверяют
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-xl-3 col-sm-6 text-center blockPartner">
+                <img src="img/apponent1.png" height="70px" alt="">
+            </div>
+            <div class="col-xl-3 col-sm-6 text-center blockPartner">
+                <img src="img/apponent2.png" height="70px" alt="">
+            </div>
+            <div class="col-xl-3 col-sm-6 text-center blockPartner">
+                <img src="img/apponent3.png" height="70px" alt="">
+            </div>
+            <div class="col-xl-3 col-sm-6 text-center blockPartner">
+                <img src="img/apponent4.png" height="70px" alt="">
+            </div>
+            <span id="target3"></span>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5" id="job">
+        <div class="row justify-content-center titleSection pb-4 text-center">
+            Наши лучшие работы
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-3 blockJob">
+                <div class="jobFoto">
+                    <img src="img/gallery1.jpg" width="100%" alt="">
+                </div>
+                <div class="jobText">
+                    Здесь описание проделанной работы, которое опишет немного объект. Так же можно указать стоимости, виды камер и т.д.
+                </div>
+            </div>
+            <div class="col-md-3 blockJob">
+                <div class="jobFoto">
+                    <img src="img/gallery1.jpg" width="100%" alt="">
+                </div>
+                <div class="jobText">
+                    Здесь описание проделанной работы, которое опишет немного объект. Так же можно указать стоимости, виды камер и т.д.
+                </div>
+            </div>
+            <div class="col-md-3 blockJob">
+                <div class="jobFoto">
+                    <img src="img/gallery1.jpg" width="100%" alt="">
+                </div>
+                <div class="jobText">
+                    Здесь описание проделанной работы, которое опишет немного объект. Так же можно указать стоимости, виды камер и т.д.
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-3 blockJob">
+                <div class="jobFoto">
+                    <img src="img/gallery1.jpg" width="100%" alt="">
+                </div>
+                <div class="jobText">
+                    Здесь описание проделанной работы, которое опишет немного объект. Так же можно указать стоимости, виды камер и т.д.
+                </div>
+            </div>
+            <div class="col-md-3 blockJob">
+                <div class="jobFoto">
+                    <img src="img/gallery1.jpg" width="100%" alt="">
+                </div>
+                <div class="jobText">
+                    Здесь описание проделанной работы, которое опишет немного объект. Так же можно указать стоимости, виды камер и т.д.
+                </div>
+            </div>
+            <div class="col-md-3 blockJob">
+                <div class="jobFoto">
+                    <img src="img/gallery1.jpg" width="100%" alt="">
+                </div>
+                <div class="jobText">
+                    Здесь описание проделанной работы, которое опишет немного объект. Так же можно указать стоимости, виды камер и т.д.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5 pt-3" id="price">
+        <div class="row justify-content-center titleSection py-5 text-center">
+            Как мы работаем
+        </div>
+        <div class="row justify-content-around" id="steps">
+                <div class="col-lg-1" id="stub">
+                        &#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>
+                    </div>
+            <div class="colMini col-lg-2 col-6 text-center">
+                <img src="img/step1.jpg" width="40%" alt="">
+                <p class="stepText">Заявка</p>
+                <p>Оставьте заявку на сайте или позвоните нам на прямую</p>
+                <span class="colBlock" id="c0"></span>
+            </div>
+            <div class="colMini col-lg-2 col-6 text-center">
+                <img src="img/step2.jpg" width="40%" alt="">
+                <p class="stepText">Бесплатный выезд</p>
+                <p>Наши мастера бесплатно доедут до Вас для установки камер</p>
+                <span class="colBlock" id="c1"></span>
+            </div>
+            <div class="colMini col-lg-2 col-6 text-center">
+                <img src="img/step3.jpg" width="40%" alt="">
+                <p class="stepText">Смета и договор</p>
+                <p>Предоставим полный и подробный прайс-лист для подписания</p>
+                <span class="colBlock" id="c2"></span>
+            </div>
+            <div class="colMini col-lg-2 col-6 text-center">
+                <img src="img/step4.jpg" width="40%" alt="">
+                <p class="stepText">Монтаж</p>
+                <p>В кратчайшее время проводим монтаж и настройку всего оборудования</p>
+                <span class="colBlock" id="c3"></span>
+            </div>
+            <div class="colMini col-lg-2 col-6 text-center">
+                <img src="img/step5.jpg" width="40%" alt="">
+                <p class="stepText">Обучение</p>
+                <p>Покажем и научим пользоваться всем новым оборудованием</p>
+                <span class="colBlock" id="c4"></span>
+            </div>
+            <div class="col-lg-1" id="stub2">
+                &#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>&#160;<br>
+            </div>
+        </div>
+    </div>
+    <span id="target4"> </span>
+
+    <div class="container-fluid py-5" id="camers">
+        <div class="row justify-content-center titleSection text-center">
+            Какие камеры мы готовы предложить
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-xl-3 blockSpecially p-0">
+                <img src="img/camera1.jpg" alt="" width="100%">
+                <div class="SpeciallyTitle">
+                    Аналоговые высокой чёткости
+                </div>
+                <div class="SpeciallyText">
+                        Наиболее экономичные и достаточно качественные системы. HD разрешение 720р и 1080р для видео; нет задержек кадров. Возможна модернизация старой системы без замены кабельных линий
+                </div>
+                <a class="SpecBottom mt-auto" href="#fonForm">Заказать -></a>
+            </div>
+            <div class="col-xl-3 blockSpecially p-0">
+                <img src="img/camera2.jpg" alt="" width="100%">
+                <div class="SpeciallyTitle">
+                    Гибридные
+                </div>
+                <div class="SpeciallyText">
+                        Позволяют снизить общую стоимость монтажа системы видеонаблюдения, за счёт применения недорогих аналоговых и сетевых камер высокого разрешения. Возможна модернизация старой системы.
+                </div>
+                <a class="SpecBottom mt-auto" href="#fonForm">Заказать -></a>
+            </div>
+            <div class="col-xl-3 blockSpecially p-0">
+                <img src="img/camera3.jpg" alt="" width="100%">
+                <div class="SpeciallyTitle">
+                    Цифровые IP системы
+                </div>
+                <div class="SpeciallyText">
+                        Высочайшее качество изображения (разрешение до 30 MPix); возможность применения интеллектуальных модулей; возможность построение больших сетей с распределённой структурой
+                </div>
+                <a class="SpecBottom mt-auto" href="#fonForm">Заказать -></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="row justify-content-center pt-4 pb-5 titleSection text-center">
+            Устанавливаем лучшее
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-2 m-3">
+                <img src="img/mark1.jpg" alt="" width="100%">
+            </div>
+            <div class="col-md-2 m-3">
+                <img src="img/mark2.png" alt="" width="100%">
+            </div>
+            <div class="col-md-2 m-3">
+                <img src="img/mark3.jpg" alt="" width="100%">
+            </div>
+            <div class="col-md-2 m-3">
+                <img src="img/mark6.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <div class="row justify-content-around mt-3">
+            <div class="col-md-2 m-3">
+                <img src="img/mark7.png" alt="" width="100%">
+            </div>
+            <div class="col-md-2 m-3">
+                <img src="img/mark8.jpg" alt="" width="100%">
+            </div>
+            <div class="col-md-2 m-3">
+                <img src="img/mark5.png" alt="" width="100%">
+            </div>
+            <div class="col-md-2 m-3">
+                <img src="img/mark10.jpg" alt="" width="100%">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5" id="fonForm">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 order-2" id="order">
+                <form class="footerForm" action="mailFull.php" method="POST">
+                    <div class="form-row flex-column">
+                        <p class="mb-0 formText">Имя:</p>
+                        <input type="text" class="formPole1 mb-4" name="user_name">
+                        <p class="mb-0 formText">Email:</p>
+                        <input type="text" class="formPole1 mb-4" name="user_email">
+                        <p class="mb-0 formText">Номер телефона:</p>
+                        <input type="text" class="formPole1 mb-4" name="user_phone">
+                        <p class="mb-0 formText">Сообщение:</p>
+                        <textarea class="formPole1 mb-4" name="user_text" rows="2"></textarea>
+                        <button class="formBtn">Оставить заявку</button>
+                    </div>
+                </form>
+                <span id="target5"></span>
+            </div>
+            <div class="col-md-8 order-3 text-center my-auto text-white footerTitle">
+                <h2>Оставьте заявку прямо сейчас <br> и мы свяжемся с Вами в близжайшее время!</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row footer py-3">
+            <div class="col-md-4 mb-3" id="footerLogo">
+                <p class="footerBrand"><img src="img/logo3.png" width="50px" height="50px" alt=""> SmartHome</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <p>Все права защищены</p>
+                <p>Собственность "SmartHome"</p>
+            </div>
+            <div class="col-md-4 text-right footerContact">
+                <p>99-45-45</p>
+                <p>info@smarthome76.ru</p>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-1.11.0.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
