@@ -14,7 +14,7 @@
     transition: .7s;
 }
 .modalInput:hover{
-    width: 65%;
+    width: 65%; 
 }
 .modalInput:focus{
     width: 65%;
@@ -54,17 +54,20 @@ nav{
 }
 @media(max-width: 768px){
     #header{
+        background: url('img/mobileFon.jpg');
         background-position: center;
     }
 }
 @media(max-width: 576px){
-    #mainTitle h1{
-        text-shadow: -1px 0 1px white, 0 -1px 1px white, 0 1px 1px white, 1px 0 1px white, 0 0 8px white, 0 0 8px white, 0 0 8px white, 2px 2px 3px black;
+    #mainTitle h1,
+    #mainTitle h3,
+    #mainTitle h5{
+    text-shadow: 1px 1px #e6e6e6, 1px -1px #e6e6e6, -1px 1px #e6e6e6, -1px -1px #e6e6e6, 3px 3px 6px rgba(0,0,0,.5);
+    letter-spacing: 2px;
     }
 }
 @media(max-width: 450px){
     #header{
-        background: url('img/fon1Mini.jpg');
         background-size: cover;
     }
     .navbar-brand{
@@ -125,7 +128,7 @@ nav{
     font-weight: 500;
     overflow: hidden !important;
     display: inline-block;
-    background-color: rgb(0, 174, 255, 1);
+    background-color: #00aeff;
     position: relative;
 }
 .line{
@@ -188,6 +191,16 @@ nav{
     font-size: 43px !important;
     line-height: 1.35;
 }
+
+#mainTitle > h3{
+    font-size: 33px;
+    padding-bottom: 15px;
+}
+
+#mainTitle > h5{
+    font-size: 23px;
+    padding-bottom: 15px;
+}
 @media(max-width: 400px){
     #mainTitle > h1{
         font-size: 38px !important;
@@ -245,12 +258,15 @@ nav{
 }
 .footerTitle{
     font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-shadow: 1px 1px #e6e6e6, 1px -1px #161416, -1px 1px #292029, -1px -1px #050205, 3px 3px 6px rgba(0,0,0,.5);
 }
 .SpecBottom{
-    background-color: rgb(233, 233, 233);
+    margin: 10px 20px;
+    background-color: rgb(32, 183, 253);
     text-align: center;
     padding: 8px 0px;
-    box-shadow: inset 0px 0px 2px 0px rgba(109, 109, 109, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(109, 109, 109, 0.75);
     transition: .6s;
     cursor: pointer;
     color: black;
@@ -259,12 +275,13 @@ nav{
     font-family: 'Ubuntu', sans-serif;
 }
 .SpecBottom:hover{
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(0, 174, 255);
     text-align: center;
     padding: 8px 0px;
     color: black;
     text-decoration: none;
-    box-shadow: inset 0px 0px 5px 0px rgba(109, 109, 109, 0.75);
+    transform: translateY(-5px);
+    box-shadow: 0px 3px 8px 0px rgba(109, 109, 109, 0.75);
 }
 .blockForm{
     background-color: #00296B;
@@ -364,6 +381,7 @@ input::-webkit-inner-spin-button {
     padding: 20px;
     font-size: 19px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 .appTitle{
     padding-top: 10px;
@@ -436,7 +454,7 @@ input::-webkit-inner-spin-button {
 
 .formBlock{
     margin: 30px 0px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(79, 199, 255);
     box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.45);
     border-radius: 25px;
     transition: .9s;

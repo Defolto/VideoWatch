@@ -24,52 +24,6 @@ $(window).scroll(function () {
     }
 });
 
-
-var textAbout =[];
-for (let i = 0; i < 7; i++) {
-    textAbout[i] = false;
-}
-$(`.colMini p + p`).hide();
-$('.colBlock').click(function (e) { 
-    var id = e.target.id;
-    id = Number(id[1]) + 2;
-    $(`.colMini:nth-child(${id}) .colBlock`).hide();
-    if (textAbout[id-1] == false) {
-        $(`.colMini:nth-child(${id }) .stepText`).fadeOut(0);
-        textAbout[id-1] = true;
-        $(`.colMini:nth-child(${id}) .stepText + p`).fadeIn(600);
-    }
-    else{
-        $(`.colMini:nth-child(${id}) .stepText`).fadeIn(600);
-        textAbout[id-1] = false;
-        $(`.colMini:nth-child(${id}) .stepText + p`).fadeOut(0);
-    }
-    setTimeout(() => {
-        $(`.colMini:nth-child(${id}) .colBlock`).show();
-    }, 800);
-});
-
-$(`#steps div .stepText + p`).fadeOut(0);
-var countAbount = 2;
-if (Animation.checkPC()) {
-    setInterval(() => {
-        if (textAbout[countAbount-1] == false) {
-            $(`#steps div:nth-child(${countAbount }) .stepText`).fadeOut(0);
-            textAbout[countAbount-1] = true;
-            $(`#steps div:nth-child(${countAbount}) .stepText + p`).fadeIn(600);
-        }
-        else{
-            $(`#steps div:nth-child(${countAbount}) .stepText`).fadeIn(600);
-            textAbout[countAbount-1] = false;
-            $(`#steps div:nth-child(${countAbount}) .stepText + p`).fadeOut(0);
-        }
-        countAbount++;
-        if (countAbount == 7) {
-            countAbount = 2;
-        }
-    }, 2200);
-}
-
 $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
         event.preventDefault();
