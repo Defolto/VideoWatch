@@ -70,9 +70,6 @@ nav{
     #header{
         background-size: cover;
     }
-    .navbar-brand{
-        color: white !important;
-    }
 }
 .whiteFon{
     background-color: rgba(255, 255, 255, 0.8);

@@ -74,8 +74,8 @@
             </div>
         </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top px-3 py-1">
-        <a class="navbar-brand" href="#"><img class="navbarFoto" src="img/logo3.png" alt="Логотип">SmartHome</a>
+    <nav class="navbar navbar-light navbar-expand-lg navbar-light fixed-top px-3 py-1" style="background-color: #e3f2fdda;">
+        <a class="navbar-brand" style="color: black" href="#"><img class="navbarFoto" src="img/logo3.png" alt="Логотип">SmartHome</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -442,6 +442,18 @@
     </div>
     <script src="jquery-1.11.0.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        let flagColor = true;
+$('.navbar-toggler').click(function (e) { 
+    if (!flagColor){
+        document.querySelector('.navbar-light').style.backgroundColor = "#e3f2fdda";
+        flagColor = !flagColor;
+    }else{
+        document.querySelector('.navbar-light').style.backgroundColor = "#e3f2fd";
+        flagColor = !flagColor;
+    }
+});
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

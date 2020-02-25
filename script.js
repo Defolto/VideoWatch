@@ -14,6 +14,7 @@ class Animation{
             return false;
     }
 }
+
 $(window).scroll(function () { 
     if(window.pageYOffset == 0){
         $('nav').removeClass('navHide');
